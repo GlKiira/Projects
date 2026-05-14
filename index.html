@@ -1,423 +1,448 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aura | Premium Wellness & Medical Spa</title>
-    <meta name="description" content="Experience premium wellness, physiotherapy, and restorative care at Aura Medical Spa.">
-    
-    <!-- Google Fonts -->
+    <title>Lumina | High-End Dining</title>
+    <meta name="description" content="Experience Michelin-star dining at Lumina. An exquisite culinary journey awaits.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-    
-    <!-- FontAwesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- Custom CSS -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <!-- Header / Navigation -->
-    <header class="navbar" id="navbar">
-        <div class="container nav-container">
-            <a href="#" class="logo">
-                <i class="fa-solid fa-leaf text-accent"></i> Aura
-            </a>
-            <nav class="nav-links">
-                <a href="#services">Services</a>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Lumina.</a>
+            <div class="nav-links">
                 <a href="#about">About</a>
-                <a href="#team">Team</a>
-                <a href="#testimonials">Reviews</a>
-                <a href="#faq">FAQ</a>
-            </nav>
-            <a href="#appointment" class="btn btn-primary nav-btn">Book Appointment</a>
-            <button class="mobile-menu-toggle" aria-label="Toggle Menu">
-                <i class="fa-solid fa-bars"></i>
+                <a href="#menu">Menu</a>
+                <a href="#chef">Chef</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#experiences">Experiences</a>
+                <a href="#reservations" class="nav-cta">Reservations</a>
+            </div>
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-toggle" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
             </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Navigation Overlay -->
+    <div class="mobile-nav">
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#chef">Chef</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#experiences">Experiences</a>
+        <a href="#reservations">Reservations</a>
+    </div>
+
+    <!-- Hero Section -->
+    <header id="hero" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content reveal">
+            <h1 class="hero-title">Culinary<br>Perfection</h1>
+            <p class="hero-subtitle">An exquisite journey of taste and elegance</p>
+            <a href="#reservations" class="btn btn-primary">Reserve a Table</a>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="hero-overlay"></div>
-        <div class="container hero-content fade-in">
-            <span class="badge">Premium Care</span>
-            <h1 class="hero-title">Restoring Balance to Your Body & Mind</h1>
-            <p class="hero-subtitle">Experience a new standard of personalized wellness and therapeutic care in a tranquil, luxurious environment.</p>
-            <div class="hero-actions">
-                <a href="#appointment" class="btn btn-primary btn-lg">Book Appointment</a>
-                <a href="#services" class="btn btn-outline btn-lg">Our Services</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section class="services section-padding" id="services">
-        <div class="container">
-            <div class="section-header fade-in">
-                <h2>Our Premium Services</h2>
-                <p>Comprehensive care tailored to your unique health and wellness goals.</p>
-            </div>
-            
-            <div class="services-grid">
-                <div class="service-card slide-up">
-                    <div class="service-icon"><i class="fa-solid fa-bone"></i></div>
-                    <h3>Physiotherapy</h3>
-                    <p>Advanced physical therapy to restore movement, reduce pain, and optimize your physical function.</p>
-                </div>
-                <div class="service-card slide-up" style="transition-delay: 0.1s;">
-                    <div class="service-icon"><i class="fa-solid fa-apple-whole"></i></div>
-                    <h3>Nutrition</h3>
-                    <p>Personalized dietary plans designed to nourish your body and enhance your overall wellbeing.</p>
-                </div>
-                <div class="service-card slide-up" style="transition-delay: 0.2s;">
-                    <div class="service-icon"><i class="fa-solid fa-brain"></i></div>
-                    <h3>Psychology</h3>
-                    <p>Compassionate mental health support to help you navigate life's challenges with resilience.</p>
-                </div>
-                <div class="service-card slide-up" style="transition-delay: 0.3s;">
-                    <div class="service-icon"><i class="fa-solid fa-spa"></i></div>
-                    <h3>Massage Therapy</h3>
-                    <p>Therapeutic massage treatments focused on deep relaxation and muscle recovery.</p>
-                </div>
-                <div class="service-card slide-up" style="transition-delay: 0.4s;">
-                    <div class="service-icon"><i class="fa-solid fa-face-smile"></i></div>
-                    <h3>Dermatology</h3>
-                    <p>Expert skin care treatments utilizing state-of-the-art technology for radiant health.</p>
-                </div>
-                <div class="service-card slide-up" style="transition-delay: 0.5s;">
-                    <div class="service-icon"><i class="fa-solid fa-heart-pulse"></i></div>
-                    <h3>Holistic Wellness</h3>
-                    <p>Integrative approaches combining traditional medicine with holistic therapies.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- About Section -->
-    <section class="about section-padding bg-alt" id="about">
+    <section id="about" class="section about-section">
         <div class="container about-container">
-            <div class="about-content fade-in">
-                <span class="text-accent subtitle">Our Story</span>
-                <h2>Excellence in Healthcare, Designed for You</h2>
-                <p>Founded on the principle that health is a harmonized state of body and mind, Aura Clinic provides an sanctuary for healing and rejuvenation.</p>
-                <p>Our mission is to empower our patients with personalized, cutting-edge treatments in an environment that feels less like a clinic and more like a private retreat.</p>
-                <a href="#team" class="btn btn-outline mt-3">Meet Our Specialists</a>
+            <div class="about-image reveal slide-right">
+                <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                    alt="Restaurant interior" loading="lazy">
             </div>
-            <div class="about-stats slide-up">
-                <div class="stat-box">
-                    <span class="stat-number">15+</span>
-                    <span class="stat-label">Years of Experience</span>
+            <div class="about-content reveal slide-left">
+                <h2 class="section-title">Our Story</h2>
+                <h3 class="section-subtitle">A Legacy of Flavor</h3>
+                <p>Born from a passion for exceptional ingredients and innovative techniques, Lumina redefines the fine
+                    dining experience. Every dish is a carefully crafted masterpiece, designed to ignite your senses and
+                    leave a lasting impression.</p>
+                <p>Nestled in the heart of the city, our Michelin-starred establishment offers an atmosphere of
+                    sophisticated luxury, where flawless service meets culinary brilliance.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="section menu-section">
+        <div class="container">
+            <div class="text-center reveal">
+                <h2 class="section-title">The Menu</h2>
+                <h3 class="section-subtitle">A Symphony of Tastes</h3>
+            </div>
+
+            <div class="menu-grid">
+                <!-- Starters -->
+                <div class="menu-category reveal slide-up" style="transition-delay: 0.1s;">
+                    <h4 class="category-title">Starters</h4>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <span class="item-name">Wagyu Tartare</span>
+                            <span class="item-price">$38</span>
+                        </div>
+                        <p class="item-desc">Truffle emulsion, cured egg yolk, crispy capers, sourdough</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <span class="item-name">Diver Scallops</span>
+                            <span class="item-price">$42</span>
+                        </div>
+                        <p class="item-desc">Cauliflower purée, brown butter, hazelnut, caviar</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <span class="item-name">Heirloom Beets</span>
+                            <span class="item-price">$26</span>
+                        </div>
+                        <p class="item-desc">Whipped goat cheese, pistachio dukka, balsamic reduction</p>
+                    </div>
                 </div>
-                <div class="stat-box">
-                    <span class="stat-number">10k</span>
-                    <span class="stat-label">Happy Patients</span>
+
+                <!-- Mains -->
+                <div class="menu-category reveal slide-up" style="transition-delay: 0.2s;">
+                    <h4 class="category-title">Mains</h4>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <span class="item-name">A5 Kobe Ribeye</span>
+                            <span class="item-price">$165</span>
+                        </div>
+                        <p class="item-desc">Pommes purée, charred shallots, bone marrow jus</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <span class="item-name">Ora King Salmon</span>
+                            <span class="item-price">$65</span>
+                        </div>
+                        <p class="item-desc">Artichoke barigoule, saffron beurre blanc, fennel pollen</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <span class="item-name">Duck Breast</span>
+                            <span class="item-price">$72</span>
+                        </div>
+                        <p class="item-desc">Blackberry gastrique, parsnip, wilted Swiss chard</p>
+                    </div>
                 </div>
-                <div class="stat-box">
-                    <span class="stat-number">24</span>
-                    <span class="stat-label">Top Specialists</span>
-                </div>
-                <div class="stat-box">
-                    <span class="stat-number">50+</span>
-                    <span class="stat-label">Modern Treatments</span>
+
+                <!-- Desserts -->
+                <div class="menu-category reveal slide-up" style="transition-delay: 0.3s;">
+                    <h4 class="category-title">Desserts</h4>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <span class="item-name">Valrhona Grand Cru</span>
+                            <span class="item-price">$24</span>
+                        </div>
+                        <p class="item-desc">Dark chocolate textures, espresso gel, gold leaf</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <span class="item-name">Yuzu Tart</span>
+                            <span class="item-price">$22</span>
+                        </div>
+                        <p class="item-desc">Toasted meringue, shiso leaf, black sesame tuile</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <span class="item-name">Vanilla Bean Soufflé</span>
+                            <span class="item-price">$28</span>
+                        </div>
+                        <p class="item-desc">Madagascar vanilla, crème anglaise, raspberries</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Team Section -->
-    <section class="team section-padding" id="team">
-        <div class="container">
-            <div class="section-header fade-in">
-                <h2>Our World-Class Specialists</h2>
-                <p>Dedicated professionals committed to your health and wellness journey.</p>
+    <!-- Chef Section -->
+    <section id="chef" class="section chef-section">
+        <div class="container chef-container">
+            <div class="chef-content reveal slide-right">
+                <h2 class="section-title">The Chef</h2>
+                <h3 class="section-subtitle">Julian Rossi</h3>
+                <p>With over two decades of experience in the world's most prestigious kitchens, Chef Rossi brings his
+                    visionary approach to Lumina. His philosophy revolves around honoring the integrity of ingredients
+                    while pushing the boundaries of modern gastronomy.</p>
+                <svg class="chef-signature" width="250" height="60" viewBox="0 0 250 60"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <style>
+                        @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+                        .sig-text {
+                            font-family: 'Great Vibes', cursive;
+                            font-size: 42px;
+                            fill: #C9A84C;
+                        }
+                    </style>
+                    <text x="5" y="45" class="sig-text">Julian Rossi</text>
+                </svg>
             </div>
-            
-            <div class="team-grid">
-                <div class="team-card slide-up">
-                    <div class="team-image placeholder-img">
-                        <i class="fa-solid fa-user-doctor"></i>
-                    </div>
-                    <div class="team-info">
-                        <h3>Dr. Sarah Jenkins</h3>
-                        <p class="specialty">Lead Physiotherapist</p>
-                        <div class="social-links">
-                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                        </div>
-                    </div>
+            <div class="chef-image reveal slide-left">
+                <img src="chef.png"
+                    alt="Executive Chef Julian Rossi" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section gallery-section">
+        <div class="container">
+            <div class="text-center reveal">
+                <h2 class="section-title">Gallery</h2>
+                <h3 class="section-subtitle">Visual Delights</h3>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item large reveal slide-up" style="transition-delay: 0.1s;">
+                    <div class="gallery-overlay"></div>
+                    <img src="https://images.unsplash.com/photo-1544025162-811114cd12aa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Plated dish" loading="lazy">
                 </div>
-                <div class="team-card slide-up" style="transition-delay: 0.1s;">
-                    <div class="team-image placeholder-img">
-                        <i class="fa-solid fa-user-doctor"></i>
-                    </div>
-                    <div class="team-info">
-                        <h3>Dr. Michael Chen</h3>
-                        <p class="specialty">Clinical Psychologist</p>
-                        <div class="social-links">
-                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                        </div>
-                    </div>
+                <div class="gallery-item reveal slide-up" style="transition-delay: 0.2s;">
+                    <div class="gallery-overlay"></div>
+                    <img src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Restaurant ambiance" loading="lazy">
                 </div>
-                <div class="team-card slide-up" style="transition-delay: 0.2s;">
-                    <div class="team-image placeholder-img">
-                        <i class="fa-solid fa-user-doctor"></i>
-                    </div>
-                    <div class="team-info">
-                        <h3>Emma Robertson</h3>
-                        <p class="specialty">Nutritionist</p>
-                        <div class="social-links">
-                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                        </div>
-                    </div>
+                <div class="gallery-item reveal slide-up" style="transition-delay: 0.3s;">
+                    <div class="gallery-overlay"></div>
+                    <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Pouring wine" loading="lazy">
                 </div>
-                <div class="team-card slide-up" style="transition-delay: 0.3s;">
-                    <div class="team-image placeholder-img">
-                        <i class="fa-solid fa-user-doctor"></i>
-                    </div>
-                    <div class="team-info">
-                        <h3>Dr. James Wilson</h3>
-                        <p class="specialty">Dermatologist</p>
-                        <div class="social-links">
-                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                        </div>
-                    </div>
+                <div class="gallery-item reveal slide-up" style="transition-delay: 0.4s;">
+                    <div class="gallery-overlay"></div>
+                    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Gourmet dessert" loading="lazy">
+                </div>
+                <div class="gallery-item reveal slide-up" style="transition-delay: 0.5s;">
+                    <div class="gallery-overlay"></div>
+                    <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=800&q=80"
+                        alt="Fine dining preparation" loading="lazy">
+                </div>
+                <div class="gallery-item reveal slide-up" style="transition-delay: 0.6s;">
+                    <div class="gallery-overlay"></div>
+                    <img src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3df6?auto=format&fit=crop&w=800&q=80"
+                        alt="Culinary art" loading="lazy">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <section class="testimonials section-padding bg-alt" id="testimonials">
+    <!-- Experiences Section -->
+    <section id="experiences" class="section experiences-section">
         <div class="container">
-            <div class="section-header fade-in">
-                <h2>Patient Stories</h2>
-                <p>Hear from those who have experienced the Aura difference.</p>
+            <div class="text-center reveal">
+                <h2 class="section-title">Experiences</h2>
+                <h3 class="section-subtitle">What Our Guests Say</h3>
             </div>
-            
             <div class="testimonials-grid">
-                <div class="testimonial-card slide-up">
-                    <div class="stars">
-                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card reveal slide-up" style="transition-delay: 0.1s;">
+                    <div class="quote-icon">"</div>
+                    <p class="testimonial-text">An absolute revelation. The tasting menu took us on a journey of flavors
+                        we never thought possible. Flawless execution and impeccable service.</p>
+                    <div class="star-rating">
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                        </svg>
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                        </svg>
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                        </svg>
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                        </svg>
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                        </svg>
                     </div>
-                    <p class="review-text">"The level of care at Aura is unmatched. The physiotherapy team helped me recover from my injury in half the expected time. Highly professional and truly caring."</p>
-                    <div class="patient-info">
-                        <div class="avatar placeholder-img"><i class="fa-solid fa-user"></i></div>
-                        <div>
-                            <h4>Elena Rodriguez</h4>
-                            <p>Recovering Athlete</p>
-                        </div>
-                    </div>
+                    <p class="guest-name">— Sarah M., New York</p>
                 </div>
-                <div class="testimonial-card slide-up" style="transition-delay: 0.1s;">
-                    <div class="stars">
-                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card reveal slide-up" style="transition-delay: 0.2s;">
+                    <div class="quote-icon">"</div>
+                    <p class="testimonial-text">Chef Rossi has created a sanctuary of gastronomy. Every dish was a work
+                        of art, beautifully plated and paired exquisitely with their curated wine selection.</p>
+                    <div class="star-rating">
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                        </svg>
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                        </svg>
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                        </svg>
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                        </svg>
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                        </svg>
                     </div>
-                    <p class="review-text">"I've been visiting Dr. Chen for psychology sessions. The clinic's atmosphere is incredibly calming, and the staff respects your privacy above everything else."</p>
-                    <div class="patient-info">
-                        <div class="avatar placeholder-img"><i class="fa-solid fa-user"></i></div>
-                        <div>
-                            <h4>David Thompson</h4>
-                            <p>Executive Director</p>
-                        </div>
-                    </div>
+                    <p class="guest-name">— James T., London</p>
                 </div>
-                <div class="testimonial-card slide-up" style="transition-delay: 0.2s;">
-                    <div class="stars">
-                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card reveal slide-up" style="transition-delay: 0.3s;">
+                    <div class="quote-icon">"</div>
+                    <p class="testimonial-text">The ambiance is nothing short of breathtaking. From the moment we walked
+                        in to our final dessert, it was a masterclass in modern luxury dining.</p>
+                    <div class="star-rating">
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                        </svg>
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                        </svg>
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                        </svg>
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                        </svg>
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                        </svg>
                     </div>
-                    <p class="review-text">"A truly premium experience. The nutrition plan provided has completely changed my energy levels. I feel like a new person thanks to the team at Aura."</p>
-                    <div class="patient-info">
-                        <div class="avatar placeholder-img"><i class="fa-solid fa-user"></i></div>
-                        <div>
-                            <h4>Sophia Martinez</h4>
-                            <p>Entrepreneur</p>
-                        </div>
-                    </div>
+                    <p class="guest-name">— Elena R., Paris</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Appointment Booking Section -->
-    <section class="appointment section-padding" id="appointment">
-        <div class="container appointment-container fade-in">
-            <div class="appointment-info">
-                <h2>Book Your Consultation</h2>
-                <p>Take the first step towards better health. Schedule an appointment with one of our specialists today.</p>
-                <div class="contact-methods">
-                    <div class="method">
-                        <i class="fa-solid fa-phone text-accent"></i>
-                        <div>
-                            <h4>Call Us Directly</h4>
-                            <p>+1 (555) 123-4567</p>
-                        </div>
-                    </div>
-                    <div class="method">
-                        <i class="fa-solid fa-envelope text-accent"></i>
-                        <div>
-                            <h4>Email Us</h4>
-                            <p>appointments@auraclinic.com</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="appointment-form-wrapper slide-up">
-                <form id="booking-form" class="appointment-form">
-                    <div class="form-group">
-                        <label for="name">Full Name</label>
-                        <input type="text" id="name" placeholder="John Doe" required>
-                    </div>
+    <!-- Reservations Section -->
+    <section id="reservations" class="section reservations-section">
+        <div class="container reservations-container">
+            <div class="reservations-content reveal">
+                <h2 class="section-title">Reservations</h2>
+                <h3 class="section-subtitle">Secure Your Table</h3>
+                <p>Join us for an unforgettable dining experience. For parties larger than 6, please contact the
+                    restaurant directly.</p>
+
+                <form id="reservation-form" class="booking-form">
                     <div class="form-row">
                         <div class="form-group">
-                            <label for="email">Email Address</label>
-                            <input type="email" id="email" placeholder="john@example.com" required>
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" required placeholder="John Doe">
                         </div>
                         <div class="form-group">
-                            <label for="phone">Phone Number</label>
-                            <input type="tel" id="phone" placeholder="(555) 000-0000" required>
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="service">Select Service</label>
-                            <select id="service" required>
-                                <option value="" disabled selected>Choose a service...</option>
-                                <option value="physiotherapy">Physiotherapy</option>
-                                <option value="nutrition">Nutrition</option>
-                                <option value="psychology">Psychology</option>
-                                <option value="massage">Massage Therapy</option>
-                                <option value="dermatology">Dermatology</option>
+                            <label for="guests">Number of Guests</label>
+                            <select id="guests" required>
+                                <option value="1">1 Person</option>
+                                <option value="2" selected>2 People</option>
+                                <option value="3">3 People</option>
+                                <option value="4">4 People</option>
+                                <option value="5">5 People</option>
+                                <option value="6">6 People</option>
                             </select>
                         </div>
+                    </div>
+                    <div class="form-row">
                         <div class="form-group">
-                            <label for="date">Preferred Date</label>
+                            <label for="date">Date</label>
                             <input type="date" id="date" required>
                         </div>
+                        <div class="form-group">
+                            <label for="time">Time</label>
+                            <select id="time" required>
+                                <option value="18:00">6:00 PM</option>
+                                <option value="18:30">6:30 PM</option>
+                                <option value="19:00">7:00 PM</option>
+                                <option value="19:30" selected>7:30 PM</option>
+                                <option value="20:00">8:00 PM</option>
+                                <option value="20:30">8:30 PM</option>
+                                <option value="21:00">9:00 PM</option>
+                            </select>
+                        </div>
                     </div>
-                    <button type="submit" class="btn btn-primary btn-block">Request Appointment</button>
-                    <p class="form-note">Our team will contact you to confirm your appointment time.</p>
+                    <button type="submit" class="btn btn-primary btn-block">Confirm Reservation</button>
+                    <div class="form-message" id="form-message"></div>
                 </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ Section -->
-    <section class="faq section-padding bg-alt" id="faq">
-        <div class="container">
-            <div class="section-header fade-in">
-                <h2>Frequently Asked Questions</h2>
-                <p>Find answers to common questions about our clinic and services.</p>
-            </div>
-            
-            <div class="faq-accordion fade-in">
-                <div class="faq-item">
-                    <button class="faq-question">
-                        What should I bring to my first appointment?
-                        <i class="fa-solid fa-chevron-down"></i>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Please bring a valid ID, any relevant medical records, a list of current medications, and your insurance card if applicable. For physiotherapy sessions, we recommend wearing comfortable athletic clothing.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question">
-                        Do you accept health insurance?
-                        <i class="fa-solid fa-chevron-down"></i>
-                    </button>
-                    <div class="faq-answer">
-                        <p>We accept most major health insurance plans. However, some specialized treatments may not be fully covered. We recommend contacting our billing department or your insurance provider directly to verify coverage before your visit.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question">
-                        How early should I arrive for my appointment?
-                        <i class="fa-solid fa-chevron-down"></i>
-                    </button>
-                    <div class="faq-answer">
-                        <p>We recommend arriving 15 minutes before your scheduled appointment time. This allows enough time to complete any necessary paperwork and relax in our waiting area before your consultation.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question">
-                        Can I book multiple services on the same day?
-                        <i class="fa-solid fa-chevron-down"></i>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Absolutely. We often encourage comprehensive wellness days where you can combine treatments, such as a physiotherapy session followed by massage therapy. Please contact our front desk to coordinate a multi-service schedule.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question">
-                        What is your cancellation policy?
-                        <i class="fa-solid fa-chevron-down"></i>
-                    </button>
-                    <div class="faq-answer">
-                        <p>We require at least 24 hours' notice for cancellations or rescheduling. Cancellations made with less than 24 hours' notice may be subject to a cancellation fee.</p>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col brand-col">
-                    <a href="#" class="logo footer-logo">
-                        <i class="fa-solid fa-leaf text-accent"></i> Aura
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <h2 class="footer-logo">Lumina.</h2>
+                <p class="footer-desc">Redefining modern luxury dining through exceptional ingredients and unparalleled
+                    service.</p>
+            </div>
+            <div class="footer-contact">
+                <h4 class="footer-title">Contact</h4>
+                <p>123 Culinary Avenue, Suite 100</p>
+                <p>Metropolis, NY 10001</p>
+                <p>contact@luminarestaurant.com</p>
+                <p>+1 (555) 123-4567</p>
+            </div>
+            <div class="footer-hours">
+                <h4 class="footer-title">Hours</h4>
+                <p>Mon - Thu: 5:30 PM - 10:00 PM</p>
+                <p>Fri - Sat: 5:00 PM - 11:00 PM</p>
+                <p>Sunday: Closed</p>
+            </div>
+            <div class="footer-social">
+                <h4 class="footer-title">Follow Us</h4>
+                <div class="social-links">
+                    <a href="#" aria-label="Instagram">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
                     </a>
-                    <p>Elevating healthcare through personalized, premium treatments in a tranquil environment.</p>
-                    <div class="social-links footer-socials">
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <div class="footer-col">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#services">Our Services</a></li>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#team">Specialists</a></li>
-                        <li><a href="#faq">FAQ</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Contact Us</h4>
-                    <ul class="contact-info">
-                        <li><i class="fa-solid fa-location-dot"></i> 123 Wellness Avenue, Suite 400<br>New York, NY 10001</li>
-                        <li><i class="fa-solid fa-phone"></i> +1 (555) 123-4567</li>
-                        <li><i class="fa-solid fa-envelope"></i> info@auraclinic.com</li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Opening Hours</h4>
-                    <ul class="hours-info">
-                        <li><span>Monday - Friday:</span> 8:00 AM - 8:00 PM</li>
-                        <li><span>Saturday:</span> 9:00 AM - 4:00 PM</li>
-                        <li><span>Sunday:</span> Closed</li>
-                    </ul>
+                    <a href="#" aria-label="Facebook">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="Twitter">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4l11.733 16h4.267l-11.733 -16z" />
+                            <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" />
+                        </svg>
+                    </a>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Aura Medical Spa. All rights reserved.</p>
-                <div class="footer-legal">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Service</a>
-                </div>
-            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="current-year"></span> Lumina Restaurant. All Rights Reserved.</p>
         </div>
     </footer>
 
     <script src="script.js"></script>
 </body>
+
 </html>
