@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumina | High-End Dining</title>
+    <meta name="description" content="Experience Michelin-star dining at Lumina. An exquisite culinary journey awaits.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Lumina.</a>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#menu">Menu</a>
+                <a href="#chef">Chef</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#experiences">Experiences</a>
+                <a href="#reservations" class="nav-cta">Reservations</a>
+            </div>
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-toggle" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Navigation Overlay -->
+    <div class="mobile-nav">
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#chef">Chef</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#experiences">Experiences</a>
+        <a href="#reservations">Reservations</a>
+    </div>
+
+    <!-- Hero Section -->
+    <header id="hero" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content reveal">
+            <h1 class="hero-title">Culinary<br>Perfection</h1>
+            <p class="hero-subtitle">An exquisite journey of taste and elegance</p>
+            <a href="#reservations" class="btn btn-primary">Reserve a Table</a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container about-container">
+            <div class="about-image reveal slide-right">
+                <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                    alt="Restaurant interior" loading="lazy">
+            </div>
+            <div class="about-content reveal slide-left">
+                <h2 class="section-title">Our Story</h2>
+                <h3 class="section-subtitle">A Legacy of Flavor</h3>
+                <p>Born from a passion for exceptional ingredients and innovative techniques, Lumina redefines the fine
+                    dining experience. Every dish is a carefully crafted masterpiece, designed to ignite your senses and
+                    leave a lasting impression.</p>
+                <p>Nestled in the heart of the city, our Michelin-starred establishment offers an atmosphere of
+                    sophisticated luxury, where flawless service meets culinary brilliance.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="section menu-section">
+        <div class="container">
+            <div class="text-center reveal">
+                <h2 class="section-title">The Menu</h2>
+                <h3 class="section-subtitle">A Symphony of Tastes</h3>
+            </div>
+
+            <div class="menu-grid">
+                <!-- Starters -->
+                <div class="menu-category reveal slide-up" style="transition-delay: 0.1s;">
+                    <h4 class="category-title">Starters</h4>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <span class="item-name">Wagyu Tartare</span>
+                            <span class="item-price">$38</span>
+                        </div>
+                        <p class="item-desc">Truffle emulsion, cured egg yolk, crispy capers, sourdough</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <span class="item-name">Diver Scallops</span>
+                            <span class="item-price">$42</span>
+                        </div>
+                        <p class="item-desc">Cauliflower purée, brown butter, hazelnut, caviar</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <span class="item-name">Heirloom Beets</span>
+                            <span class="item-price">$26</span>
+                        </div>
+                        <p class="item-desc">Whipped goat cheese, pistachio dukka, balsamic reduction</p>
+                    </div>
+                </div>
+
+                <!-- Mains -->
+                <div class="menu-category reveal slide-up" style="transition-delay: 0.2s;">
+                    <h4 class="category-title">Mains</h4>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <span class="item-name">A5 Kobe Ribeye</span>
+                            <span class="item-price">$165</span>
+                        </div>
+                        <p class="item-desc">Pommes purée, charred shallots, bone marrow jus</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <span class="item-name">Ora King Salmon</span>
+                            <span class="item-price">$65</span>
+                        </div>
+                        <p class="item-desc">Artichoke barigoule, saffron beurre blanc, fennel pollen</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <span class="item-name">Duck Breast</span>
+                            <span class="item-price">$72</span>
+                        </div>
+                        <p class="item-desc">Blackberry gastrique, parsnip, wilted Swiss chard</p>
+                    </div>
+                </div>
+
+                <!-- Desserts -->
+                <div class="menu-category reveal slide-up" style="transition-delay: 0.3s;">
+                    <h4 class="category-title">Desserts</h4>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <span class="item-name">Valrhona Grand Cru</span>
+                            <span class="item-price">$24</span>
+                        </div>
+                        <p class="item-desc">Dark chocolate textures, espresso gel, gold leaf</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <span class="item-name">Yuzu Tart</span>
+                            <span class="item-price">$22</span>
+                        </div>
+                        <p class="item-desc">Toasted meringue, shiso leaf, black sesame tuile</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <span class="item-name">Vanilla Bean Soufflé</span>
+                            <span class="item-price">$28</span>
+                        </div>
+                        <p class="item-desc">Madagascar vanilla, crème anglaise, raspberries</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chef Section -->
+    <section id="chef" class="section chef-section">
+        <div class="container chef-container">
+            <div class="chef-content reveal slide-right">
+                <h2 class="section-title">The Chef</h2>
+                <h3 class="section-subtitle">Julian Rossi</h3>
+                <p>With over two decades of experience in the world's most prestigious kitchens, Chef Rossi brings his
+                    visionary approach to Lumina. His philosophy revolves around honoring the integrity of ingredients
+                    while pushing the boundaries of modern gastronomy.</p>
+                <svg class="chef-signature" width="250" height="60" viewBox="0 0 250 60"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <style>
+                        @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+                        .sig-text {
+                            font-family: 'Great Vibes', cursive;
+                            font-size: 42px;
+                            fill: #C9A84C;
+                        }
+                    </style>
+                    <text x="5" y="45" class="sig-text">Julian Rossi</text>
+                </svg>
+            </div>
+            <div class="chef-image reveal slide-left">
+                <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                    alt="Executive Chef Julian Rossi" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section gallery-section">
+        <div class="container">
+            <div class="text-center reveal">
+                <h2 class="section-title">Gallery</h2>
+                <h3 class="section-subtitle">Visual Delights</h3>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item large reveal slide-up" style="transition-delay: 0.1s;">
+                    <div class="gallery-overlay"></div>
+                    <img src="https://images.unsplash.com/photo-1544025162-811114cd12aa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Plated dish" loading="lazy">
+                </div>
+                <div class="gallery-item reveal slide-up" style="transition-delay: 0.2s;">
+                    <div class="gallery-overlay"></div>
+                    <img src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Restaurant ambiance" loading="lazy">
+                </div>
+                <div class="gallery-item reveal slide-up" style="transition-delay: 0.3s;">
+                    <div class="gallery-overlay"></div>
+                    <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Pouring wine" loading="lazy">
+                </div>
+                <div class="gallery-item reveal slide-up" style="transition-delay: 0.4s;">
+                    <div class="gallery-overlay"></div>
+                    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Gourmet dessert" loading="lazy">
+                </div>
+                <div class="gallery-item reveal slide-up" style="transition-delay: 0.5s;">
+                    <div class="gallery-overlay"></div>
+                    <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=800&q=80"
+                        alt="Fine dining preparation" loading="lazy">
+                </div>
+                <div class="gallery-item reveal slide-up" style="transition-delay: 0.6s;">
+                    <div class="gallery-overlay"></div>
+                    <img src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3df6?auto=format&fit=crop&w=800&q=80"
+                        alt="Culinary art" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experiences Section -->
+    <section id="experiences" class="section experiences-section">
+        <div class="container">
+            <div class="text-center reveal">
+                <h2 class="section-title">Experiences</h2>
+                <h3 class="section-subtitle">What Our Guests Say</h3>
+            </div>
+            <div class="testimonials-grid">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card reveal slide-up" style="transition-delay: 0.1s;">
+                    <div class="quote-icon">"</div>
+                    <p class="testimonial-text">An absolute revelation. The tasting menu took us on a journey of flavors
+                        we never thought possible. Flawless execution and impeccable service.</p>
+                    <div class="star-rating">
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                        </svg>
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                        </svg>
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                        </svg>
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                        </svg>
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                        </svg>
+                    </div>
+                    <p class="guest-name">— Sarah M., New York</p>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card reveal slide-up" style="transition-delay: 0.2s;">
+                    <div class="quote-icon">"</div>
+                    <p class="testimonial-text">Chef Rossi has created a sanctuary of gastronomy. Every dish was a work
+                        of art, beautifully plated and paired exquisitely with their curated wine selection.</p>
+                    <div class="star-rating">
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                        </svg>
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                        </svg>
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                        </svg>
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                        </svg>
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                        </svg>
+                    </div>
+                    <p class="guest-name">— James T., London</p>
+                </div>
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card reveal slide-up" style="transition-delay: 0.3s;">
+                    <div class="quote-icon">"</div>
+                    <p class="testimonial-text">The ambiance is nothing short of breathtaking. From the moment we walked
+                        in to our final dessert, it was a masterclass in modern luxury dining.</p>
+                    <div class="star-rating">
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                        </svg>
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                        </svg>
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                        </svg>
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                        </svg>
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                        </svg>
+                    </div>
+                    <p class="guest-name">— Elena R., Paris</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservations Section -->
+    <section id="reservations" class="section reservations-section">
+        <div class="container reservations-container">
+            <div class="reservations-content reveal">
+                <h2 class="section-title">Reservations</h2>
+                <h3 class="section-subtitle">Secure Your Table</h3>
+                <p>Join us for an unforgettable dining experience. For parties larger than 6, please contact the
+                    restaurant directly.</p>
+
+                <form id="reservation-form" class="booking-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" required placeholder="John Doe">
+                        </div>
+                        <div class="form-group">
+                            <label for="guests">Number of Guests</label>
+                            <select id="guests" required>
+                                <option value="1">1 Person</option>
+                                <option value="2" selected>2 People</option>
+                                <option value="3">3 People</option>
+                                <option value="4">4 People</option>
+                                <option value="5">5 People</option>
+                                <option value="6">6 People</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="date">Date</label>
+                            <input type="date" id="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="time">Time</label>
+                            <select id="time" required>
+                                <option value="18:00">6:00 PM</option>
+                                <option value="18:30">6:30 PM</option>
+                                <option value="19:00">7:00 PM</option>
+                                <option value="19:30" selected>7:30 PM</option>
+                                <option value="20:00">8:00 PM</option>
+                                <option value="20:30">8:30 PM</option>
+                                <option value="21:00">9:00 PM</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Confirm Reservation</button>
+                    <div class="form-message" id="form-message"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <h2 class="footer-logo">Lumina.</h2>
+                <p class="footer-desc">Redefining modern luxury dining through exceptional ingredients and unparalleled
+                    service.</p>
+            </div>
+            <div class="footer-contact">
+                <h4 class="footer-title">Contact</h4>
+                <p>123 Culinary Avenue, Suite 100</p>
+                <p>Metropolis, NY 10001</p>
+                <p>contact@luminarestaurant.com</p>
+                <p>+1 (555) 123-4567</p>
+            </div>
+            <div class="footer-hours">
+                <h4 class="footer-title">Hours</h4>
+                <p>Mon - Thu: 5:30 PM - 10:00 PM</p>
+                <p>Fri - Sat: 5:00 PM - 11:00 PM</p>
+                <p>Sunday: Closed</p>
+            </div>
+            <div class="footer-social">
+                <h4 class="footer-title">Follow Us</h4>
+                <div class="social-links">
+                    <a href="#" aria-label="Instagram">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="Facebook">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="Twitter">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4l11.733 16h4.267l-11.733 -16z" />
+                            <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="current-year"></span> Lumina Restaurant. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
